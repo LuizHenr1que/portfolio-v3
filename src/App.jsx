@@ -14,8 +14,8 @@ function App() {
       <IconFlutuante />
       <SidebarMobile />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/project/:id" element={<ProjectDetails />} />
+        <Route path="/portfolio-v3" element={<Home />} />
+        <Route path="/portfolio-v3/:id" element={<ProjectDetails />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/formacao" element={<Formacao />} />
         <Route path="/email" element={<PageEmail />} />
