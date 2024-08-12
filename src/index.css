@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(Components/IconFlutuante/IconFlutuanteStyles.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.shadow-custom {
+  box-shadow:  0px 4px 10px rgba(255, 255, 255, 0.39);
+}
+
+:root {
+  --text: hsl(0, 0%, 99%);
+  --textDim: hsl(0, 0%, 60%);
+  --background: hsl(0, 0%, 7%);
+  --primary: hsl(155, 100%, 65%);
+  --primaryBg: hsla(155, 100%, 65%, 1%);
+  --primaryHi: hsla(155, 100%, 75%, 25%);
+  --primaryFg: hsl(155, 100%, 85%);
+  --secondary: hsl(156, 51%, 14%);
+  --secondaryFg: hsl(156, 51%, 75%);
+  --secondaryBg: hsla(156, 51%, 14%, 5%);
+  --secondaryHi: hsla(156, 51%, 30%, 50%);
+  --accent: hsl(155, 100%, 94%);
+  --accentBg: hsla(155, 100%, 94%, 1%);
+  --accentHi: hsla(155, 100%, 100%, 25%);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.blur {
+  height: 12rem;
+  width: 12rem;
+  background-color: var(--primary);
+  filter: blur(100px);
+  border-radius: 100px;
+  z-index: 0;
+  position: absolute;
+  top: -50px;
+  right: 250px;
+}
+.grid-svg {
+  height: 80%;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  top: -350px;
+  left: 100px;
+}
+
+.button {
+  position: relative;
+}
+
+.button button {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 13px;
+  background-color: var(--primaryBg);
+  box-shadow: 0px -3px 15px 0px var(--primaryHi) inset;
+  color: var(--primaryFg);
+  font-size: .8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0px);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.luz {
+  width: 100px;
+  height: 60px;
+  background-color: var(--primaryHi);
+  border-radius: 100%;
+  filter: blur(20px);
+  top: 20%;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+.button:hover > span {
+  opacity: 60%;
+}
+
+.button:hover > button {
+  transform: translateY(5px);
+}
+
+.button.sec > button {
+  background-color: var(--accentBg);
+  box-shadow: 0px -3px 15px 0px var(--accentHi) inset;
+  color: var(--accentFg);
+}
+
+.button.sec > span {
+  background-color: var(--accentHi);
+}
+ 
+.top-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 50%;
+  z-index: -999px;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 50%;
+  z-index: -999px;
+}
+
+
+
+/*Projetos*/
+.card:hover {
+  background-color: var(--primaryHi);
+  box-shadow: 0px -3px 15px 0px var(--accentHi) inset;
+}
+
+
+/*Email*/
+
+input:focus {
+  border: transparent;
+}
+.button_padrao{
+  transition:   0.3s;
+  color: white;
+}
+
+.button_padrao:hover{
+  background: var(--secondary);
+}

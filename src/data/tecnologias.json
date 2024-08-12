@@ -1,0 +1,91 @@
+{
+  "Ptecnologias": [
+    {
+      "icon": "FaReact", 
+      "subtitulo": "React",
+      "descricao": "Lorem ipsum dolor sitdsa"
+    },
+    {
+      "icon": "FaPhp", 
+      "subtitulo": "Php",
+      "descricao": "Consectetur adipiscing elit"
+    },
+    {
+      "icon": "FaNode",
+      "subtitulo": "Node",
+      "descricao": "Sed do eiusmod tempor incididunt"
+    },
+    {
+      "icon": "SiMicrosoftsqlserver",
+      "subtitulo": "SQL server",
+      "descricao": "Sed do eiusmod tempor incididunt"
+    }
+    
+  ],
+  "ferramentas": [
+    {
+      "icon": "FaReact", 
+      "subtitulo": "React"
+    },
+    {
+      "icon": "FaPhp", 
+      "subtitulo": "Php"
+    },
+    {
+      "icon": "FaNode",
+      "subtitulo": "Node"
+    },
+    {
+      "icon": "SiMicrosoftsqlserver",
+      "subtitulo": "SQL server"
+    },
+    {
+      "icon": "FaVuejs", 
+      "subtitulo": "Vue.js"
+    },    
+    {
+      "icon": "FaLaravel", 
+      "subtitulo": "Laravel"
+    },
+    {
+      "icon": "FaDocker",
+      "subtitulo": "Docker"
+    },
+    {
+      "icon": "FaBootstrap",
+      "subtitulo": "Bootstrap"
+    },
+    {
+      "icon": "SiTailwindcss", 
+      "subtitulo": "TailwindCss"
+    },
+    {
+      "icon": "FaSass", 
+      "subtitulo": "Sass"
+    },
+    {
+      "icon": "SiStyledcomponents", 
+      "subtitulo": "Styled components"
+    },
+    {
+      "icon": "FaFigma", 
+      "subtitulo": "Figma"
+    },
+    {
+      "icon": "SiMongodb", 
+      "subtitulo": "Mongodb"
+    } ,
+    {
+      "icon": "FaWordpress", 
+      "subtitulo": "Wordpress "
+    },
+    {
+      "icon": "FaGitAlt", 
+      "subtitulo": "Git"
+    },
+    {
+      "icon": "SiTypescript", 
+      "subtitulo": "Typescript"
+    } 
+  ]
+}

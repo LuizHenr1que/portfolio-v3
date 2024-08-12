@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "title": "AyelLol",
+    "description": "Projeto construido inspirado em um layout do site oficial do yael lol. Rensponsivo",
+    "image": [
+      { "img": "/projetos/ayellol.png" },
+      { "img": "/projetos/ayell1.png" },
+      { "img": "/projetos/ayell2.png" }
+    ],
+    "technologies": ["javascript", "css", "html"],
+    "links": {
+      "site": "https://luizhenr1que.github.io/ayerlLol/",
+      "github": "https://github.com/LuizHenr1que/ayerlLol"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Menu Online",
+    "description": "Layout totalmente rensponsivo | Carrinho de compras | Cardápio completo | Link para fazer reservas.",
+    "image": [
+      { "img": "/projetos/menu-online.png" },
+      { "img": "/projetos/menuonline1.png" },
+      { "img": "/projetos/menuonline2.png" }
+    ],
+    "technologies": ["html", "css", "jquery", "bootstrap", "javascript"],
+    "links": {
+      "site": "https://luizhenr1que.github.io/Menu/",
+      "github": "https://github.com/LuizHenr1que/Menu"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Bikcraft",
+    "description": "Layout Bikcraft, escolha sua bicicletas",
+    "image": [
+      { "img": "/projetos/bickcraft.png" },
+      { "img": "/projetos/bickcraft1.png" },
+      { "img": "/projetos/bickcraft2.png" }
+    ],
+    "technologies": ["javascript", "css", "html"],
+    "links": {
+      "site": "https://luizhenr1que.github.io/bikcraft/",
+      "github": "https://github.com/LuizHenr1que/bikcraft"
+    }
+  }
+  
+]

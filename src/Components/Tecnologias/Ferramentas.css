@@ -1,0 +1,19 @@
+.border-top-left {
+    border-top-left-radius: 8px;
+  }
+  
+  .border-top-right {
+    border-top-right-radius: 8px;
+  }
+  
+  .border-bottom-left {
+    border-bottom-left-radius: 8px;
+  }
+  
+  .border-bottom-right {
+    border-bottom-right-radius: 8px;
+  }
+  .ferramentas li:hover {
+    box-shadow: 7px 5px 56px -14px hsl(155, 100%, 65%);
+    transition: box-shadow 0.3s ease-in-out;
+  }
