@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import IconFlutuante from "./Components/IconFlutuante/IconFlutuante";
 import SidebarMobile from "./Components/Sidebar/SidebarMobile/SidebarMobile";
@@ -11,17 +11,15 @@ import PageEmail from "./pages/PageEmail/PageEmail";
 function App() {
   return (
     <div className="App">
-      <Router basename="/portfolio-v3">
-        <IconFlutuante />
-        <SidebarMobile />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/:id" element={<ProjectDetails />} />
-          <Route path="/sobre" element={<Sobre />} />
-          <Route path="/formacao" element={<Formacao />} />
-          <Route path="/email" element={<PageEmail />} />
-        </Routes>
-      </Router>
+      <IconFlutuante />
+      <SidebarMobile />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<ProjectDetails />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/formacao" element={<Formacao />} />
+        <Route path="/email" element={<PageEmail />} />
+      </Routes>
     </div>
   );
 }
