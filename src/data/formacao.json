@@ -3,13 +3,13 @@
       "curso": "Análise e Desenvolvimento de Sistemas",
       "instituicao": "Estácio de Sá",
       "periodo": "Fev. 2023 - Concluído",
-      "imagem": "/estacio.png"
+      "imagem": "/portfolio-v3/assets/imagens/estacio.png"
     },
     {
         "curso": "Web Design e Desenvolvimento Front End",
         "instituicao": "Origamid",
         "periodo": "em andamento",
-        "imagem": "/origamid.png"
+        "imagem": "/portfolio-v3/assets/imagens/origamid.png"
     }
   ]
   

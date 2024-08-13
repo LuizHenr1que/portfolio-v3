@@ -15,7 +15,7 @@ function App() {
       <SidebarMobile />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:id" element={<ProjectDetails />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/formacao" element={<Formacao />} />
         <Route path="/email" element={<PageEmail />} />

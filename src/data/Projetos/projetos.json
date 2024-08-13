@@ -4,9 +4,9 @@
     "title": "AyelLol",
     "description": "Projeto construido inspirado em um layout do site oficial do yael lol. Rensponsivo",
     "image": [
-      { "img": "/projetos/ayellol.png" },
-      { "img": "/projetos/ayell1.png" },
-      { "img": "/projetos/ayell2.png" }
+      { "img": "/portfolio-v3/assets/imagens/projetosimg/ayellol.png" },
+      { "img": "/portfolio-v3/assets/imagens/projetosimg/ayell1.png" },
+      { "img": "/portfolio-v3/assets/imagens/projetosimg/ayell2.png" }
     ],
     "technologies": ["javascript", "css", "html"],
     "links": {
@@ -19,9 +19,9 @@
     "title": "Menu Online",
     "description": "Layout totalmente rensponsivo | Carrinho de compras | Cardápio completo | Link para fazer reservas.",
     "image": [
-      { "img": "/projetos/menu-online.png" },
-      { "img": "/projetos/menuonline1.png" },
-      { "img": "/projetos/menuonline2.png" }
+      { "img": "/portfolio-v3/assets/imagens/projetosimg/menu-online.png" },
+      { "img": "/portfolio-v3/assets/imagens/projetosimg/menuonline1.png" },
+      { "img": "/portfolio-v3/assets/imagens/projetosimg/menuonline2.png" }
     ],
     "technologies": ["html", "css", "jquery", "bootstrap", "javascript"],
     "links": {
@@ -34,9 +34,9 @@
     "title": "Bikcraft",
     "description": "Layout Bikcraft, escolha sua bicicletas",
     "image": [
-      { "img": "/projetos/bickcraft.png" },
-      { "img": "/projetos/bickcraft1.png" },
-      { "img": "/projetos/bickcraft2.png" }
+      { "img": "/portfolio-v3/assets/imagens/projetosimg/bickcraft.png" },
+      { "img": "/portfolio-v3/assets/imagens/projetosimg/bickcraft1.png" },
+      { "img": "/portfolio-v3/assets/imagens/projetosimg/bickcraft2.png" }
     ],
     "technologies": ["javascript", "css", "html"],
     "links": {
@@ -44,5 +44,4 @@
       "github": "https://github.com/LuizHenr1que/bikcraft"
     }
   }
-  
 ]
