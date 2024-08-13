@@ -3,22 +3,22 @@
     {
       "icon": "FaReact", 
       "subtitulo": "React",
-      "descricao": "Lorem ipsum dolor sitdsa"
+      "descricao": "Construção de Interfaces Modernas"
     },
     {
       "icon": "FaPhp", 
       "subtitulo": "Php",
-      "descricao": "Consectetur adipiscing elit"
+      "descricao": "Desenvolvimento Web Robusto"
     },
     {
       "icon": "FaNode",
       "subtitulo": "Node",
-      "descricao": "Sed do eiusmod tempor incididunt"
+      "descricao": "Aplicações em Tempo Real"
     },
     {
       "icon": "SiMicrosoftsqlserver",
       "subtitulo": "SQL server",
-      "descricao": "Sed do eiusmod tempor incididunt"
+      "descricao": "Gestão Eficiente de Dados"
     }
     
   ],

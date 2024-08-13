@@ -10,7 +10,7 @@ const StackComponent = () => {
     <div>
       <div className="mb-10">
         <h1 className="subtitulo">Stack</h1>
-        <p className="text-gray500">Lorem ipsum dolor sit amet</p>
+        <p className="text-gray500">Tecnologias que Dominei</p>
       </div>
       <div className="flex flex-col gap-4 -ml-4">
         {Ptecnologias.map((tec, index) => {
