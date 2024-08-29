@@ -1,18 +1,31 @@
+import { useEffect } from "react";
 import * as IconsFa from "react-icons/fa";
 import * as IconsSi from "react-icons/si";
 import { Link } from "react-router-dom";
+import ScrollReveal from 'scrollreveal';
 import tecnologias from "../../data/tecnologias.json";
 
 const StackComponent = () => {
   const { Ptecnologias } = tecnologias;
 
+  useEffect(() => {
+    // Inicialize o ScrollReveal e defina a configuração
+    ScrollReveal().reveal('.stack-item', {
+      duration: 900,
+      distance: '20px',
+      easing: 'ease-in-out',
+      origin: 'left',
+      interval: 100 
+    });
+  }, []);
+
   return (
     <div>
-      <div className="mb-10">
+      <div className="mb-10 stack-item">
         <h1 className="subtitulo">Stack</h1>
         <p className="text-gray500">Tecnologias que Dominei</p>
       </div>
-      <div className="flex flex-col gap-4 -ml-4">
+      <div className="flex flex-col gap-4 -ml-4 stack-item">
         {Ptecnologias.map((tec, index) => {
           // Determinar o ícone e a biblioteca
           const isSiIcon = tec.icon.startsWith("Si");
@@ -22,7 +35,7 @@ const StackComponent = () => {
           return (
             <div
               key={index}
-              className="flex flex-row items-center gap-5 rounded-lg hover:bg-hover transition duration-200 p-2 card"
+              className="stack-item flex flex-row items-center gap-5 rounded-lg hover:bg-hover transition duration-200 p-2 card"
             >
               {IconComponent && <IconComponent className="h-10 w-10" />}
               <div className="flex flex-col">

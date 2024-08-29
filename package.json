@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",  
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -23,7 +23,8 @@
     "react-router-dom": "^6.23.1",
     "react-simple-typewriter": "^5.0.1",
     "react-toastify": "^10.0.5",
-    "react-transition-group": "^4.4.5"
+    "react-transition-group": "^4.4.5",
+    "scrollreveal": "^4.0.9"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

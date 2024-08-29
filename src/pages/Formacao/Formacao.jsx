@@ -1,8 +1,19 @@
 import formacaoData from '../../data/formacao.json'; // Ajuste o caminho conforme necessário
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 export const Formacao = () => {
+  useEffect(() => {
+    // Inicialize o ScrollReveal e defina a configuração
+    ScrollReveal().reveal(".headline", {
+      duration: 900,
+      distance: "50px",
+      easing: "ease-in-out",
+      origin: "left",
+    });
+  }, []);
   return (
-    <div className="container-main items-start flex gap-20">
+    <div className="container-main items-start flex gap-20 headline">
       <div className="flex flex-col gap-4">
         <h1 className="titulo">
           Invest <br /> in the <span className="text-primary">future</span>,

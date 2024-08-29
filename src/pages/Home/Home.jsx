@@ -1,8 +1,18 @@
+import { useEffect } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import Tecnologias from "../../Components/Tecnologias/Tecnologias";
 import ProjectList from "../../Components/ProjetosList/Projetolist";
 import Email from "../../Components/Email/Email";
+import ScrollReveal from "scrollreveal";
+import LuizHenriqueImage from "../../assets/imagens/luizhenrique.png";
+import docker from "../../assets/imagens/docker.png";
+import figma from "../../assets/imagens/figma.png";
+import js from "../../assets/imagens/js.png";
+import nodejs from "../../assets/imagens/nodejs.png";
+import php from "../../assets/imagens/php.png";
+import servidor from "../../assets/imagens/servidor-sql.png";
+import laravel from "../../assets/imagens/laravel.png";
 
 export default function Home() {
   const [text] = useTypewriter({
@@ -13,8 +23,24 @@ export default function Home() {
     delaySpeed: 1000,
   });
 
+  useEffect(() => {
+    // Inicialize o ScrollReveal e defina a configuração
+    ScrollReveal().reveal(".headline", {
+      duration: 900,
+      distance: "50px",
+      easing: "ease-in-out",
+      origin: "left",
+    });
+    ScrollReveal().reveal(".headlineR", {
+      duration: 900,
+      distance: "30px",
+      easing: "ease-in-out",
+      origin: "right",
+    });
+  }, []);
+
   return (
-    <div className="container-main text-left flex flex-col gap-20 mb-24">
+    <div className="mt-10 container-main text-left flex flex-col gap-20 mb-24">
       <svg
         className="top-right -z-50"
         width="219"
@@ -99,8 +125,8 @@ export default function Home() {
         </g>
       </svg>
 
-      <div className="title w-full">
-        <div className="flex flex-col gap-4">
+      <div className="mb-[-200px] title w-full flex home_descricao">
+        <div className="flex flex-col gap-4 headline">
           <span>Olá, o meu nome é</span>
           <h1 className="titulo">
             Luiz Henrique <br />
@@ -115,14 +141,14 @@ export default function Home() {
             especializada na construção e design de experiências digitais.
           </p>
           <div className="flex gap-4">
-              <a
+            <a
               href=" \portfolio-v3\assets\CurriculoLuizHenrique.pdf"
               target="_blank"
-                className="button first"
-              >
-                <button>Currículo</button>
-                <span className="luz"></span>
-              </a>
+              className="button first"
+            >
+              <button>Currículo</button>
+              <span className="luz"></span>
+            </a>
 
             <Link to="/Email" className="button sec">
               <button>Email</button>
@@ -130,19 +156,34 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className="relative img_profile_container headlineR">
+          <img src={LuizHenriqueImage} alt="Luiz Henrique" className="imagem-profile-home"/>
+          <div className="letras flex space-x-2">
+            <div className="neon-text l" data-letter="L">L</div>
+            <div className="neon-text h" data-letter="H">H</div>
+          </div>
+          <div className="img-icons">
+              <img src={docker} alt="docker" />
+              <img src={figma} alt="figma" />
+              <img src={js} alt="js" />
+              <img src={nodejs} alt="nodejs" />
+              <img src={php} alt="php" />
+              <img src={servidor} alt="servidor" />
+              <img src={laravel} alt="servidor" />
+          </div>
+        </div>
       </div>
 
-      <div className="projetos w-full">
+      <div className="projetos w-full headline">
         <h1 className="subtitulo mb-4 ">projects</h1>
-
         <ProjectList />
       </div>
 
-      <div className="stack flex flex-col gap-5 rounded-lg border border-primaryHi w-full p-8">
+      <div className="stack flex flex-col gap-5 rounded-lg border border-primaryHi w-full p-8 headline">
         <Tecnologias />
       </div>
 
-      <div className="w-full ">
+      <div className="w-full headline">
         <h1 className="mb-5 subtitulo">Fale comigo</h1>
         <Email />
       </div>

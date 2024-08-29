@@ -1,7 +1,19 @@
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import Experiencia from "../../Components/Experiencia/Experiencia";
 import Ferramentas from "../../Components/Tecnologias/Ferramentas";
 
 export const Sobre = () => {
+  useEffect(() => {
+    // Inicialize o ScrollReveal e defina a configuração
+    ScrollReveal().reveal(".headline", {
+      duration: 900,
+      distance: "50px",
+      easing: "ease-in-out",
+      origin: "left",
+    });
+  }, []);
+    
   return (
     <div className="container-main items-start flex gap-20 mb-24">
             <svg
@@ -88,7 +100,7 @@ export const Sobre = () => {
         </g>
       </svg>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 headline">
         <h1 className="titulo">
           Turn <span className="text-primary">Coffe</span>
           <br />
@@ -96,7 +108,7 @@ export const Sobre = () => {
         </h1>
         <p className="p-titulo">
           Olá, meu nome é <span className=" text-primary">Luiz Henrique</span>,
-          tenho 22 anos e sou{" "}
+          tenho 23 anos e sou{" "}
           <span className=" text-primary">Desenvolvedor Full Stack</span>. Minha
           jornada na programação começou com o aprendizado de lógica utilizando
           Python. Hoje, especializado na construção e design de experiências
@@ -111,11 +123,11 @@ export const Sobre = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-4 w-full">
+      <div className="flex flex-col gap-4 w-full headline">
         <Ferramentas />
       </div>
 
-      <div className="flex flex-col gap-4 w-full">
+      <div className="flex flex-col gap-4 w-full headline">
         <Experiencia />
       </div>
     </div>
