@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { GoHome } from "react-icons/go";
 import { IoMailUnreadOutline } from "react-icons/io5";
 import { MdOutlinePersonOutline } from "react-icons/md";
@@ -6,9 +7,34 @@ import { Link, useLocation } from "react-router-dom";
 
 export function SidebarMobile() {
   const location = useLocation();
+  const [showSidebar, setShowSidebar] = useState(true);
+  let lastScrollY = window.scrollY;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // Rolando para baixo
+        setShowSidebar(false);
+      } else {
+        // Rolando para cima
+        setShowSidebar(true);
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
-    <div className="border border-secondaryHi fixed top-2 left-1/2 transform -translate-x-1/2 bg-primaryBg bg-opacity-50 backdrop-blur-md shadow-lg flex items-center z-50 rounded-2xl p-2 h-20">
+    <div
+      className={`border border-secondaryHi fixed top-2 left-1/2 transform -translate-x-1/2 bg-primaryBg bg-opacity-50 backdrop-blur-md shadow-lg flex items-center z-50 rounded-2xl p-2 h-20 transition-transform duration-300 ${
+        showSidebar ? "translate-y-0" : "-translate-y-[150%]"
+      }`}
+    >
       <div className="flex flex-row gap-x-6 px-5 md:gap-x-12">
         <Link
           to="/"
