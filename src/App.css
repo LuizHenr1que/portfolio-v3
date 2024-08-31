@@ -1,5 +1,27 @@
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Estiliza a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: black; /* Cor do fundo da trilha */
+}
+
+/* Estiliza o polegar da barra de rolagem (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background-color: hsla(155, 100%, 75%, 25%); /* Cor verde para o polegar */
+  border-radius: 10px; /* Deixa as bordas arredondadas */
+}
+
+/* Estiliza o polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(155, 100%, 75%, 25%); /* Cor verde escuro ao passar o mouse */
+}
+
+
 ::selection {
-  background: hsl(155, 100%, 65%); 
+  background: hsla(155, 100%, 75%, 25%); 
   color: #000000; 
 }
 /* Para navegadores Webkit (Chrome, Safari) */
