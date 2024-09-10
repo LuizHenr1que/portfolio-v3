@@ -25,7 +25,7 @@
   "ferramentas": [
     {
       "icon": "FaReact", 
-      "subtitulo": "React"
+      "subtitulo": "React | React Native"
     },
     {
       "icon": "FaPhp", 
@@ -86,6 +86,6 @@
     {
       "icon": "SiTypescript", 
       "subtitulo": "Typescript"
-    } 
+    }
   ]
 }
