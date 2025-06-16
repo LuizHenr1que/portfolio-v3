@@ -150,10 +150,10 @@ export default function Home() {
               <span className="luz"></span>
             </a>
 
-            <Link to="/Email" className="button sec">
+            {/* <Link to="/Email" className="button sec">
               <button>Email</button>
               <span className="luz"> </span>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="relative img_profile_container headlineR">
