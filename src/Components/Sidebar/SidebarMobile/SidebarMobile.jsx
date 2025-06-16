@@ -56,7 +56,7 @@ export function SidebarMobile() {
           Sobre
         </Link>
 
-        <Link
+        {/* <Link
           to="/Email"
           className={`flex flex-col justify-center items-center ${
             location.pathname === "/Email" ? "text-primary" : "text-white"
@@ -64,7 +64,7 @@ export function SidebarMobile() {
         >
           <IoMailUnreadOutline size={24} />
           Email
-        </Link>
+        </Link> */}
 
         <Link
           to="/formacao"
