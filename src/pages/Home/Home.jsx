@@ -183,10 +183,10 @@ export default function Home() {
         <Tecnologias />
       </div>
 
-      <div className="w-full headline">
+      {/* <div className="w-full headline">
         <h1 className="mb-5 subtitulo">Fale comigo</h1>
         <Email />
-      </div>
+      </div> */}
     </div>
   );
 }
