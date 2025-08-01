@@ -141,7 +141,7 @@ export default function Home() {
           </p>
           <div className="flex gap-4">
             <a
-              href=" \portfolio-v3\assets\CurriculoLuizHenriquee.pdf"
+              href=" \portfolio-v3\assets\CurriculoLuizHenrique.pdf"
               target="_blank"
               className="button first"
             >
