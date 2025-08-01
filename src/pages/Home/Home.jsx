@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Tecnologias from "../../Components/Tecnologias/Tecnologias";
 import ProjectList from "../../Components/ProjetosList/Projetolist";
-import Email from "../../Components/Email/Email";
+// import Email from "../../Components/Email/Email";
 import ScrollReveal from "scrollreveal";
 import LuizHenriqueImage from "../../assets/imagens/luizhenrique.png";
 import docker from "../../assets/imagens/docker.png";
@@ -137,12 +137,11 @@ export default function Home() {
             </span>
           </h1>
           <p className="p-titulo">
-            Eu sou um desenvolvedor Fullstack (com foco em Front-end)
-            especializada na construção e design de experiências digitais.
+            Sou um desenvolvedor Full Stack, com experiência sólida tanto em Front-end quanto em Back-end. Tenho paixão por criar soluções completas, desde a interface até a lógica de negócio, sempre focando em performance, escalabilidade e uma ótima experiência do usuário.
           </p>
           <div className="flex gap-4">
             <a
-              href=" \portfolio-v3\assets\CurriculoLuizHenrique.pdf"
+              href=" \portfolio-v3\assets\CurriculoLuizHenriquee.pdf"
               target="_blank"
               className="button first"
             >
