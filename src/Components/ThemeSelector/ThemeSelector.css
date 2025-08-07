@@ -1,6 +1,6 @@
 .theme-selector {
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
   z-index: 1000;
 }
@@ -38,7 +38,7 @@
 
 .theme-selector-dropdown {
   position: absolute;
-  bottom: 60px;
+  top: 60px;
   right: 0;
   background: var(--secondary);
   border: 1px solid var(--secondaryHi);
@@ -46,13 +46,13 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   min-width: 160px;
-  animation: slideUp 0.2s ease;
+  animation: slideDown 0.2s ease;
 }
 
-@keyframes slideUp {
+@keyframes slideDown {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
@@ -130,12 +130,13 @@
 /* Responsivo para mobile */
 @media (max-width: 768px) {
   .theme-selector {
-    bottom: 80px;
-    right: 20px;
+    top: 20px;
+    right: 10px;
   }
   
   .theme-selector-dropdown {
-    right: -100px;
+    right: 0;
     min-width: 140px;
+    max-width: calc(100vw - 20px);
   }
 }
