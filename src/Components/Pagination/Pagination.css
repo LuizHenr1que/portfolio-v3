@@ -1,0 +1,69 @@
+/* Estilos específicos para o componente de paginação */
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination-info {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination-button.active {
+  background-color: var(--primary-color, #3b82f6);
+  color: white;
+  border-color: var(--primary-color, #3b82f6);
+}
+
+.pagination-button:not(.active):not(:disabled):hover {
+  background-color: #f9fafb;
+}
+
+.pagination-numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pagination-dots {
+  padding: 0.5rem;
+  color: #6b7280;
+}
+
+@media (max-width: 640px) {
+  .pagination-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pagination-numbers {
+    gap: 0.125rem;
+  }
+  
+  .pagination-button {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}

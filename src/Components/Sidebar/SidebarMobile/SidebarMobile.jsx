@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { GoHome } from "react-icons/go";
-import { IoMailUnreadOutline } from "react-icons/io5";
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { PiCertificateBold } from "react-icons/pi";
 import { Link, useLocation } from "react-router-dom";
@@ -8,18 +7,18 @@ import { Link, useLocation } from "react-router-dom";
 export function SidebarMobile() {
   const location = useLocation();
   const [showSidebar, setShowSidebar] = useState(true);
-  let lastScrollY = window.scrollY;
+  const lastScrollYRef = useRef(window.scrollY);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
+      if (window.scrollY > lastScrollYRef.current) {
         // Rolando para baixo
         setShowSidebar(false);
       } else {
         // Rolando para cima
         setShowSidebar(true);
       }
-      lastScrollY = window.scrollY;
+      lastScrollYRef.current = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,7 +26,7 @@ export function SidebarMobile() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <div
