@@ -13,7 +13,7 @@ export const Formacao = () => {
     });
   }, []);
   return (
-    <div className="container-main items-start flex gap-20 headline">
+    <div className="container-main items-start flex gap-20 headline mb-20">
       <div className="flex flex-col gap-4">
         <h1 className="titulo">
           Invest <br /> in the <span className="text-primary">future</span>,
@@ -28,13 +28,24 @@ export const Formacao = () => {
             key={index}
             className="flex gap-6 items-center rounded-md overflow-hidden transition-all duration-300 p-4 border-l-2 border-secondary card"
           >
-            <div className="relative">
-              <img src={item.imagem} alt="" className="w-24 h-w-24 rounded-md" />
+            <div className="relative flex items-center justify-center">
+              {item.imagem.startsWith('/') ? (
+                <img src={item.imagem} alt="" className="w-24 h-24 rounded-md object-cover" />
+              ) : (
+                <div className="w-24 h-24 rounded-md bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-4xl">
+                  {item.imagem}
+                </div>
+              )}
             </div>
-            <div className="rounded-md">
-              <h3>{item.curso}</h3>
-              <p className='text-gray-500'>{item.periodo}</p>
-              <p>{item.instituicao}</p>
+            <div className="rounded-md flex-1">
+              <h3 className="text-lg font-semibold">{item.curso}</h3>
+              <p className='text-gray-500 text-sm'>{item.periodo}</p>
+              <p className="text-gray-600 dark:text-gray-300">{item.instituicao}</p>
+              {item.descricao && (
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+                  {item.descricao}
+                </p>
+              )}
             </div>
           </div>
         ))}

@@ -17,8 +17,18 @@
     },
     {
       "icon": "SiMicrosoftsqlserver",
-      "subtitulo": "SQL server",
+      "subtitulo": "SQL Server",
       "descricao": "Gestão Eficiente de Dados"
+    },
+    {
+      "icon": "SiTypescript",
+      "subtitulo": "TypeScript",
+      "descricao": "JavaScript com Tipagem Estática"
+    },
+    {
+      "icon": "SiPython",
+      "subtitulo": "Python",
+      "descricao": "Desenvolvimento Backend e Automação"
     }
     
   ],
@@ -33,11 +43,11 @@
     },
     {
       "icon": "FaNode",
-      "subtitulo": "Node"
+      "subtitulo": "Node.js"
     },
     {
       "icon": "SiMicrosoftsqlserver",
-      "subtitulo": "SQL server"
+      "subtitulo": "SQL Server"
     },
     {
       "icon": "FaVuejs", 
@@ -46,6 +56,50 @@
     {
       "icon": "FaLaravel", 
       "subtitulo": "Laravel"
+    },
+    {
+      "icon": "SiNextdotjs",
+      "subtitulo": "Next.js"
+    },
+    {
+      "icon": "SiNestjs",
+      "subtitulo": "Nest.js"
+    },
+    {
+      "icon": "SiExpress",
+      "subtitulo": "Express"
+    },
+    {
+      "icon": "SiTypescript", 
+      "subtitulo": "TypeScript"
+    },
+    {
+      "icon": "SiJavascript",
+      "subtitulo": "JavaScript"
+    },
+    {
+      "icon": "FaHtml5",
+      "subtitulo": "HTML5"
+    },
+    {
+      "icon": "FaCss3Alt",
+      "subtitulo": "CSS3"
+    },
+    {
+      "icon": "SiPython",
+      "subtitulo": "Python"
+    },
+    {
+      "icon": "SiPostgresql",
+      "subtitulo": "PostgreSQL"
+    },
+    {
+      "icon": "SiMongodb", 
+      "subtitulo": "MongoDB"
+    },
+    {
+      "icon": "SiMysql",
+      "subtitulo": "MySQL"
     },
     {
       "icon": "FaDocker",
@@ -57,7 +111,7 @@
     },
     {
       "icon": "SiTailwindcss", 
-      "subtitulo": "TailwindCss"
+      "subtitulo": "Tailwind CSS"
     },
     {
       "icon": "FaSass", 
@@ -65,27 +119,23 @@
     },
     {
       "icon": "SiStyledcomponents", 
-      "subtitulo": "Styled components"
+      "subtitulo": "Styled Components"
     },
     {
       "icon": "FaFigma", 
       "subtitulo": "Figma"
     },
     {
-      "icon": "SiMongodb", 
-      "subtitulo": "Mongodb"
-    } ,
-    {
       "icon": "FaWordpress", 
-      "subtitulo": "Wordpress "
+      "subtitulo": "WordPress"
     },
     {
       "icon": "FaGitAlt", 
-      "subtitulo": "Git"
+      "subtitulo": "Git & GitHub"
     },
     {
-      "icon": "SiTypescript", 
-      "subtitulo": "Typescript"
+      "icon": "SiJquery",
+      "subtitulo": "jQuery"
     }
   ]
 }

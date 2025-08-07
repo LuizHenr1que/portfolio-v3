@@ -1,7 +1,7 @@
 [
     {
       "curso": "Análise e Desenvolvimento de Sistemas",
-      "instituicao": "Estácio de Sá",
+      "instituicao": "Universidade Estácio de Sá",
       "periodo": "Fev. 2023 - Concluído",
       "imagem": "/portfolio-v3/assets/imagens/estacio.png"
     },
@@ -10,6 +10,27 @@
         "instituicao": "Origamid",
         "periodo": "Concluído",
         "imagem": "/portfolio-v3/assets/imagens/origamid.png"
+    },
+    {
+        "curso": "Desenvolvimento Web Completo",
+        "instituicao": "Udemy",
+        "periodo": "2024 - Concluído",
+        "descricao": "HTML, CSS, JavaScript, TypeScript, frameworks modernos e integração de projetos web responsivos.",
+        "imagem": "🎓"
+    },
+    {
+        "curso": "Desenvolvedor Full Stack",
+        "instituicao": "Udemy",
+        "periodo": "2024 - Concluído", 
+        "descricao": "Formação completa em Node.js, React, React Native, Docker, bancos de dados SQL/NoSQL, cache, Websockets e testes.",
+        "imagem": "💻"
+    },
+    {
+        "curso": "Agentes de IA Avançados e Automação Inteligente",
+        "instituicao": "Certificação em IA",
+        "periodo": "2025 - Concluído",
+        "descricao": "Criação de agentes autônomos e workflows inteligentes utilizando Python para automação de tarefas, integração de dados e desenvolvimento de soluções em IA generativa.",
+        "imagem": "🤖"
     }
   ]
   
