@@ -1,8 +1,8 @@
+@import url("./Components/IconFlutuante/IconFlutuanteStyles.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url(Components/IconFlutuante/IconFlutuanteStyles.css);
 
 * {
   margin: 0;

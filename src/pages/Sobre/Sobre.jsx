@@ -2,8 +2,11 @@ import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import Experiencia from "../../Components/Experiencia/Experiencia";
 import Ferramentas from "../../Components/Tecnologias/Ferramentas";
+import { useBirthdayContext } from "../../hooks/useBirthdayContext";
 
 export const Sobre = () => {
+  const { age } = useBirthdayContext();
+
   useEffect(() => {
     // Inicialize o ScrollReveal e defina a configuração
     ScrollReveal().reveal(".headline", {
@@ -108,7 +111,7 @@ export const Sobre = () => {
         </h1>
         <p className="p-titulo">
           Olá, meu nome é <span className=" text-primary">Luiz Henrique</span>,
-          tenho 23 anos e sou{" "}
+          tenho {age} anos e sou{" "}
           <span className=" text-primary">Desenvolvedor Full Stack</span>. Minha
           jornada na programação começou com o aprendizado de lógica utilizando
           Python. Hoje, especializado na construção e design de experiências

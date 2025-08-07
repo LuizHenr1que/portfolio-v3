@@ -1,0 +1,131 @@
+/* Componente de Confete */
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.confetti-particle {
+  position: absolute;
+  pointer-events: none;
+  animation: confetti-fall linear infinite;
+  border-radius: 2px;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Variações de animação para mais naturalidade */
+.confetti-particle:nth-child(2n) {
+  animation-name: confetti-fall-left;
+}
+
+.confetti-particle:nth-child(3n) {
+  animation-name: confetti-fall-right;
+}
+
+.confetti-particle:nth-child(4n) {
+  animation-name: confetti-fall-spin;
+}
+
+@keyframes confetti-fall-left {
+  0% {
+    transform: translateY(-100vh) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  
+  50% {
+    transform: translateY(50vh) translateX(-50px) rotate(360deg);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(100vh) translateX(-100px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-fall-right {
+  0% {
+    transform: translateY(-100vh) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  
+  50% {
+    transform: translateY(50vh) translateX(50px) rotate(-360deg);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(100vh) translateX(100px) rotate(-720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-fall-spin {
+  0% {
+    transform: translateY(-100vh) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  
+  25% {
+    transform: translateY(25vh) rotate(180deg) scale(1.2);
+    opacity: 1;
+  }
+  
+  50% {
+    transform: translateY(50vh) rotate(360deg) scale(0.8);
+    opacity: 1;
+  }
+  
+  75% {
+    transform: translateY(75vh) rotate(540deg) scale(1.1);
+    opacity: 0.8;
+  }
+  
+  100% {
+    transform: translateY(100vh) rotate(720deg) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .confetti-particle {
+    width: 4px !important;
+    height: 4px !important;
+  }
+}
+
+/* Reduzir movimento para usuários que preferem menos animação */
+@media (prefers-reduced-motion: reduce) {
+  .confetti-particle {
+    animation-duration: 1s !important;
+  }
+  
+  @keyframes confetti-fall {
+    0% {
+      transform: translateY(-10px) rotate(0deg);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: translateY(10px) rotate(90deg);
+      opacity: 0;
+    }
+  }
+}
