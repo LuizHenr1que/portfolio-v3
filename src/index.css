@@ -1,4 +1,5 @@
 @import url("./Components/IconFlutuante/IconFlutuanteStyles.css");
+@import url("./Components/ThemeSelector/ThemeSelector.css");
 
 @tailwind base;
 @tailwind components;
@@ -13,6 +14,7 @@
 }
 
 :root {
+  /* Tema escuro (padrão) */
   --text: hsl(0, 0%, 99%);
   --textDim: hsl(0, 0%, 60%);
   --background: hsl(0, 0%, 7%);
@@ -27,11 +29,60 @@
   --accent: hsl(155, 100%, 94%);
   --accentBg: hsla(155, 100%, 94%, 1%);
   --accentHi: hsla(155, 100%, 100%, 25%);
+  --accentFg: hsl(155, 100%, 99%);
+}
+
+/* Tema claro */
+:root.light {
+  --text: hsl(0, 0%, 5%);
+  --textDim: hsl(0, 0%, 25%);
+  --background: hsl(0, 0%, 98%);
+  --primary: hsl(155, 95%, 18%);
+  --primaryBg: hsla(155, 95%, 18%, 25%);
+  --primaryHi: hsla(155, 95%, 18%, 50%);
+  --primaryFg: hsl(0, 0%, 98%);
+  --secondary: hsl(156, 40%, 75%);
+  --secondaryFg: hsl(156, 60%, 15%);
+  --secondaryBg: hsla(156, 40%, 75%, 30%);
+  --secondaryHi: hsla(156, 40%, 60%, 60%);
+  --accent: hsl(155, 95%, 5%);
+  --accentBg: hsla(155, 95%, 5%, 25%);
+  --accentHi: hsla(155, 95%, 5%, 50%);
+  --accentFg: hsl(0, 0%, 98%);
+}
+
+/* Tema escuro explícito */
+:root.dark {
+  --text: hsl(0, 0%, 99%);
+  --textDim: hsl(0, 0%, 60%);
+  --background: hsl(0, 0%, 7%);
+  --primary: hsl(155, 100%, 65%);
+  --primaryBg: hsla(155, 100%, 65%, 1%);
+  --primaryHi: hsla(155, 100%, 75%, 25%);
+  --primaryFg: hsl(155, 100%, 85%);
+  --secondary: hsl(156, 51%, 14%);
+  --secondaryFg: hsl(156, 51%, 75%);
+  --secondaryBg: hsla(156, 51%, 14%, 5%);
+  --secondaryHi: hsla(156, 51%, 30%, 50%);
+  --accent: hsl(155, 100%, 94%);
+  --accentBg: hsla(155, 100%, 94%, 1%);
+  --accentHi: hsla(155, 100%, 100%, 25%);
+  --accentFg: hsl(155, 100%, 99%);
 }
 
 body {
   background-color: var(--background);
   color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Transições suaves para elementos que usam variáveis CSS */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadow-custom {
+  box-shadow: 0px 4px 10px var(--primaryHi);
 }
 
 .blur {
@@ -135,10 +186,11 @@ input:focus {
   border: transparent;
 }
 .button_padrao{
-  transition:   0.3s;
-  color: white;
+  transition: 0.3s;
+  color: var(--text);
 }
 
 .button_padrao:hover{
   background: var(--secondary);
+  color: var(--secondaryFg);
 }

@@ -24,11 +24,6 @@
       "icon": "SiTypescript",
       "subtitulo": "TypeScript",
       "descricao": "JavaScript com Tipagem Estática"
-    },
-    {
-      "icon": "SiPython",
-      "subtitulo": "Python",
-      "descricao": "Desenvolvimento Backend e Automação"
     }
     
   ],
