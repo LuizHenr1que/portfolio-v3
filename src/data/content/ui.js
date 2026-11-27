@@ -1,4 +1,3 @@
-import agro from "../../assets/posts/agro.jpg";
 import evento from "../../assets/posts/evento.jpg";
 import pagpeguePoster from "../../assets/posts/pagpegue.jpg";
 import pagpegueVideo from "../../assets/posts/pagpegue.mp4";
@@ -13,8 +12,8 @@ export const ui = {
       en: "Luiz Henrique · Full stack",
     },
     description: {
-      pt: "Fundador da PagPegue e criador da Vértice Softwares. PDV, Condo360, CRM, Academy e a operação do Grupo Itajobi.",
-      en: "Founder of PagPegue and creator of Vértice Softwares. POS, Condo360, CRM, Academy, and Grupo Itajobi operations.",
+      pt: "Fundador da PagPegue e criador da Vértice Softwares. PDV, Condo360, CRM e Academy.",
+      en: "Founder of PagPegue and creator of Vértice Softwares. POS, Condo360, CRM, and Academy.",
     },
   },
   nav: [
@@ -31,8 +30,8 @@ export const ui = {
     title: { pt: "Eu entrego o sistema", en: "I ship the system" },
     titleEm: { pt: "e fico no pico.", en: "and stay for the rush." },
     lede: {
-      pt: "Fundador da PagPegue e criador da Vértice Softwares. No ar: PDV em Stone e PagBank, Condo360, CRM, Academy e a operação do Grupo Itajobi.",
-      en: "Founder of PagPegue and creator of Vértice Softwares. Live: POS on Stone and PagBank, Condo360, CRM, Academy, and Grupo Itajobi operations.",
+      pt: "Fundador da PagPegue e criador da Vértice Softwares. No ar: PDV em Stone e PagBank, Condo360, CRM e Academy.",
+      en: "Founder of PagPegue and creator of Vértice Softwares. Live: POS on Stone and PagBank, Condo360, CRM, and Academy.",
     },
     primary: { pt: "Ver o trabalho", en: "See the work" },
     secondary: { pt: "Currículo", en: "Resume" },
@@ -178,15 +177,6 @@ export const ui = {
           en: "PagPegue went from zero to an ecosystem: panel, POS, and door validation.",
         },
       },
-      {
-        href: "https://pt.linkedin.com/posts/luiz-henrique44_agro-log%C3%ADstica-tecnologia-activity-7459620047020453888-zwqn",
-        image: agro,
-        tag: { pt: "Agro", en: "Farming" },
-        quote: {
-          pt: "O sistema entrou na colheita e na logística: telemetria, rastreamento e a operação do dia.",
-          en: "The system joined harvest and logistics: telemetry, tracking, and the daily operation.",
-        },
-      },
     ],
   },
   experience: {
@@ -212,15 +202,6 @@ export const ui = {
         text: {
           pt: "PDV em Stone, PagBank e outras adquirentes, com validação de caixa no app.",
           en: "POS on Stone, PagBank, and other acquirers, with till validation in the app.",
-        },
-      },
-      {
-        period: { pt: "Set 2024 — hoje", en: "Sep 2024 — now" },
-        role: { pt: "Analista de programação", en: "Programming analyst" },
-        place: "Usina Itajobi (Grupo Itajobi)",
-        text: {
-          pt: "A frota e o motorista no celular de quem conduz o turno. O alerta chega na hora, e as câmeras, feitas do zero, entregam o relatório antes do incidente.",
-          en: "The fleet and the driver on the phone of whoever runs the shift. The alert arrives immediately, and the cameras, built from scratch, deliver the report before the incident.",
         },
       },
     ],

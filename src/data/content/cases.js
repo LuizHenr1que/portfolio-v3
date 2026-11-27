@@ -94,40 +94,4 @@ export const cases = [
     ],
     stack: ["React", "Quiz", "Ranking", "Pix"],
   },
-  {
-    id: "usina",
-    image: null,
-    href: null,
-    title: "Usina Itajobi",
-    role: {
-      pt: "Grupo Itajobi · Analista de programação",
-      en: "Grupo Itajobi · Programming analyst",
-    },
-    summary: {
-      pt: "A operação da usina cabe no celular de quem conduz o turno. Quando a frota ou o motorista saem do combinado, o alerta chega na hora, em vez de o problema aparecer só no dia seguinte. O monitoramento de câmeras, feito do zero em Laravel e React, conecta as câmeras e manda o relatório para o celular, inclusive quando o motorista boceja. No mesmo trabalho, um bot com LangChain e RAG lê os PDFs da operação e responde citando a fonte.",
-      en: "The mill's operation fits on the phone of whoever runs the shift. When the fleet or the driver leaves the plan, the alert arrives immediately, instead of the problem showing up only the next day. The camera monitor, built from scratch in Laravel and React, connects the cameras and sends the report to the phone, including when the driver yawns. On the same job, a bot built with LangChain and RAG reads the operation's PDFs and answers with the source.",
-    },
-    result: {
-      pt: "40+ bugs críticos corrigidos e cerca de 25% a mais de eficiência operacional.",
-      en: "40+ critical bugs fixed and about 25% better operational efficiency.",
-    },
-    note: {
-      pt: "Operação fechada. O print fica disponível sob pedido.",
-      en: "Closed operation. Screenshot available on request.",
-    },
-    stats: [
-      {
-        value: "40+",
-        label: { pt: "bugs críticos", en: "critical bugs" },
-      },
-      {
-        value: "+25%",
-        label: {
-          pt: "eficiência operacional",
-          en: "operational efficiency",
-        },
-      },
-    ],
-    stack: ["React Native", "Laravel", "React", "Realm", "LangChain"],
-  },
 ];
