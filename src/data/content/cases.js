@@ -95,16 +95,16 @@ export const cases = [
     stack: ["React", "TypeScript", "Node.js", "Quiz", "Ranking", "Pix"],
   },
   {
-    id: "telemetria",
-    title: { pt: "Sistema de Telemetria", en: "Telemetry System" },
-    role: { pt: "Desenvolvedor de Sistemas", en: "Software Developer" },
+    id: "itajobi",
+    title: { pt: "Usina Itajobi (Grupo Itajobi)", en: "Usina Itajobi (Grupo Itajobi)" },
+    role: { pt: "Analista de Programação — Full Stack & Mobile", en: "Software Developer — Full Stack & Mobile" },
     summary: {
-      pt: "Sistema de telemetria em produção. Desenvolvimento e manutenção de aplicações web e mobile com foco em performance de API e app.",
-      en: "Telemetry system in production. Development and maintenance of web and mobile applications focused on API and app performance.",
+      pt: "Apps web e mobile de rastreamento e telemetria em tempo real no agronegócio. Dashboards React, APIs e rastreamento Bluetooth em hardware real Android.",
+      en: "Real-time tracking and telemetry web and mobile apps in agribusiness. React dashboards, APIs, and Bluetooth tracking on real Android hardware.",
     },
     result: {
-      pt: "A API de histórico saiu de mais de 3 min para cerca de 214 ms. O app ficou cerca de 40% mais rápido.",
-      en: "The history API went from over 3 min to about 214 ms. The app got about 40% faster.",
+      pt: "40+ bugs críticos corrigidos, ~30% menos incidentes em produção. API de histórico saiu de 3+ min para 214 ms. App migrado para Realm, ~40% mais rápido, crashes pararam.",
+      en: "40+ critical bugs fixed, ~30% fewer production incidents. History API went from 3+ min to 214 ms. App migrated to Realm, ~40% faster, crashes stopped.",
     },
     stats: [
       {
@@ -115,8 +115,12 @@ export const cases = [
         value: "+40%",
         label: { pt: "performance do app", en: "app performance" },
       },
+      {
+        value: "~30%",
+        label: { pt: "menos incidentes", en: "fewer incidents" },
+      },
     ],
-    stack: ["React Native", "Laravel", "React", "Realm", "Redis", "MySQL"],
+    stack: ["React Native", "Laravel", "React", "Realm", "Redis", "MySQL", "Bluetooth", "Android"],
   },
   {
     id: "larzin",

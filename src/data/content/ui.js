@@ -42,16 +42,16 @@ export const ui = {
       value: 40,
       suffix: "%",
       label: {
-        pt: "mais performance no app (telemetria)",
-        en: "faster app (telemetry project)",
+        pt: "mais performance no app (Itajobi)",
+        en: "faster app (Itajobi)",
       },
     },
     {
       value: 30,
       suffix: "%",
       label: {
-        pt: "menos incidentes (telemetria)",
-        en: "fewer incidents (telemetry project)",
+        pt: "menos incidentes em produção (Itajobi)",
+        en: "fewer production incidents (Itajobi)",
       },
     },
     {
@@ -205,12 +205,12 @@ export const ui = {
         },
       },
       {
-        period: { pt: "Set 2024", en: "Sep 2024" },
-        role: { pt: "Desenvolvedor de Sistemas", en: "Software Developer" },
-        place: { pt: "Projeto de Telemetria", en: "Telemetry Project" },
+        period: { pt: "Set 2024 — Atual", en: "Sep 2024 — Present" },
+        role: { pt: "Analista de Programação — Full Stack & Mobile", en: "Software Developer — Full Stack & Mobile" },
+        place: { pt: "Usina Itajobi (Grupo Itajobi)", en: "Usina Itajobi (Grupo Itajobi)" },
         text: {
-          pt: "Desenvolvimento e manutenção de aplicações web e mobile com foco em performance. Sistemas de telemetria em produção: API de histórico saiu de 3+ min para 214 ms, app 40% mais rápido.",
-          en: "Development and maintenance of web and mobile applications focused on performance. Telemetry systems in production: history API went from 3+ min to 214 ms, app 40% faster.",
+          pt: "Apps web e mobile de rastreamento e telemetria em tempo real. Dashboards React e APIs. Corrigi 40+ bugs críticos, ~30% menos incidentes em produção. App de telemetria migrado para Realm, ~40% de ganho de performance, crashes pararam. API de histórico saiu de 3+ min para 214 ms.",
+          en: "Real-time tracking and telemetry web and mobile apps. React dashboards and APIs. Fixed 40+ critical bugs, ~30% fewer production incidents. Telemetry app migrated to Realm, ~40% performance gain, crashes stopped. History API went from 3+ min to 214 ms.",
         },
       },
     ],
