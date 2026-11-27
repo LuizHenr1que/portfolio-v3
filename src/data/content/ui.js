@@ -1,4 +1,4 @@
-import evento from "../../assets/posts/evento.jpg";
+import agro from "../../assets/posts/agro.jpg";
 import pagpeguePoster from "../../assets/posts/pagpegue.jpg";
 import pagpegueVideo from "../../assets/posts/pagpegue.mp4";
 import performance from "../../assets/posts/performance.jpg";
@@ -8,12 +8,12 @@ import { links } from "./site";
 export const ui = {
   meta: {
     title: {
-      pt: "Luiz Henrique · Full stack",
-      en: "Luiz Henrique · Full stack",
+      pt: "Luiz Henrique | Desenvolvedor Full Stack & Mobile",
+      en: "Luiz Henrique | Full Stack & Mobile Developer",
     },
     description: {
-      pt: "Fundador da PagPegue e criador da Vértice Softwares. PDV, Condo360, CRM, Academy e analista de programação no Grupo Itajobi.",
-      en: "Founder of PagPegue and creator of Vértice Softwares. POS, Condo360, CRM, Academy, and programming analyst at Grupo Itajobi.",
+      pt: "Desenvolvedor Full Stack & Mobile | React, TypeScript, React Native, Node.js/NestJS, PHP/Laravel | Sistemas de pagamento em produção | Redis, PostgreSQL/PostGIS, Kotlin/Android",
+      en: "Full Stack & Mobile Developer | React, TypeScript, React Native, Node.js/NestJS, PHP/Laravel | Payment systems in production | Redis, PostgreSQL/PostGIS, Kotlin/Android",
     },
   },
   nav: [
@@ -24,14 +24,14 @@ export const ui = {
   ],
   hero: {
     eyebrow: {
-      pt: "Full stack · Rio de Janeiro",
-      en: "Full stack · Rio de Janeiro",
+      pt: "Desenvolvedor Full Stack & Mobile · Rio de Janeiro",
+      en: "Full Stack & Mobile Developer · Rio de Janeiro",
     },
-    title: { pt: "Eu entrego o sistema", en: "I ship the system" },
-    titleEm: { pt: "e fico no pico.", en: "and stay for the rush." },
+    title: { pt: "Eu construo sistemas e apps", en: "I build systems and apps" },
+    titleEm: { pt: "que já estão em produção.", en: "that are already in production." },
     lede: {
-      pt: "Fundador da PagPegue e criador da Vértice Softwares. No ar: PDV em Stone e PagBank, Condo360, CRM e Academy. Analista de programação no Grupo Itajobi.",
-      en: "Founder of PagPegue and creator of Vértice Softwares. Live: POS on Stone and PagBank, Condo360, CRM, and Academy. Programming analyst at Grupo Itajobi.",
+      pt: "Desenvolvedor Full Stack & Mobile na Vértice Softwares (2023–atual). React, TypeScript, React Native, Node.js/NestJS, PHP/Laravel e Python. Entre os produtos em produção está a PagPegue, sistema de pagamento usado por 2 estabelecimentos, que já gerou mais de R$ 15.000 e foi elogiado pela velocidade.",
+      en: "Full Stack & Mobile Developer at Vértice Softwares (2023–present). React, TypeScript, React Native, Node.js/NestJS, PHP/Laravel, and Python. Among the products in production is PagPegue, a payment system used by 2 establishments, which has already generated over R$ 15,000 and has been praised for its speed.",
     },
     primary: { pt: "Ver o trabalho", en: "See the work" },
     secondary: { pt: "Currículo", en: "Resume" },
@@ -42,22 +42,22 @@ export const ui = {
       value: 40,
       suffix: "%",
       label: {
-        pt: "mais performance no app",
-        en: "faster app",
+        pt: "mais performance no app (telemetria)",
+        en: "faster app (telemetry project)",
       },
     },
     {
       value: 30,
       suffix: "%",
       label: {
-        pt: "menos incidentes em produção",
-        en: "fewer production incidents",
+        pt: "menos incidentes (telemetria)",
+        en: "fewer incidents (telemetry project)",
       },
     },
     {
       value: 400,
       suffix: "+",
-      label: { pt: "vendas por hora no pico", en: "sales an hour at peak" },
+      label: { pt: "vendas por hora no pico (PagPegue)", en: "sales an hour at peak (PagPegue)" },
     },
   ],
   proof: {
@@ -94,12 +94,12 @@ export const ui = {
   vertice: {
     eyebrow: { pt: "Vértice Softwares", en: "Vértice Softwares" },
     title: {
-      pt: "Site, sistema e app sob medida, já vendidos.",
-      en: "Custom sites, systems, and apps, already sold.",
+      pt: "Na Vértice Softwares eu desenho e entrego produtos web e mobile.",
+      en: "At Vértice Softwares I design and deliver web and mobile products.",
     },
     lede: {
-      pt: "A Vértice Softwares é a empresa. Eu desenho e entrego o produto do cliente, do briefing ao que está no ar. O CRM atende e vende no WhatsApp. A Academy eu sigo vendendo para professores lucrarem com a própria marca.",
-      en: "Vértice Softwares is the company. I design and ship the client's product, from the brief to what is live. The CRM handles support and sales on WhatsApp. I keep selling the Academy to teachers so they profit under their own brand.",
+      pt: "Na Vértice Softwares eu desenho e entrego produtos web e mobile, do briefing ao que está no ar: CRM no WhatsApp, Condo360 nas lojas e a Academy, plataforma de ensino já usada por professores.",
+      en: "At Vértice Softwares I design and deliver web and mobile products, from briefing to production: WhatsApp CRM, Condo360 in stores, and Academy, an educational platform already used by teachers.",
     },
     contactLabel: { pt: "Falar com a Vértice", en: "Talk to Vértice" },
     imageAlt: { pt: "Site da Vértice Softwares", en: "Vértice Softwares website" },
@@ -115,8 +115,8 @@ export const ui = {
         name: "Vértice Academy",
         href: "#academy",
         text: {
-          pt: "Sigo vendendo para outros professores. Eles lucram com a própria marca: questão, simulado, ranking e pagamento por Pix ou cartão.",
-          en: "I keep selling it to other teachers. They profit under their own brand: questions, mock exams, ranking, and payment by Pix or card.",
+          pt: "Plataforma de ensino já usada por professores: questões, simulados, ranking e pagamento por Pix ou cartão.",
+          en: "Educational platform already used by teachers: questions, mock exams, ranking, and payment by Pix or card.",
         },
       },
     ],
@@ -136,8 +136,8 @@ export const ui = {
   posts: {
     eyebrow: { pt: "LinkedIn", en: "LinkedIn" },
     title: {
-      pt: "O que eu contei quando o sistema estava em campo.",
-      en: "What I wrote while the system was in the field.",
+      pt: "O que eu contei quando o sistema estava no ar.",
+      en: "What I shared while the system was live.",
     },
     items: [
       {
@@ -161,11 +161,11 @@ export const ui = {
       },
       {
         href: "https://pt.linkedin.com/posts/luiz-henrique44_pagpegue-techlead-saas-activity-7513357461097975808-i5H4",
-        image: evento,
-        tag: { pt: "Evento", en: "Event" },
+        image: agro,
+        tag: { pt: "Produção", en: "Production" },
         quote: {
-          pt: "Do código direto para estoque, setores e venda em tempo real no evento.",
-          en: "From the code straight into live stock, sections, and sales at the event.",
+          pt: "Do código direto para estoque, setores e venda em tempo real em produção.",
+          en: "From the code straight into live stock, sections, and sales in production.",
         },
       },
       {
@@ -173,8 +173,8 @@ export const ui = {
         image: produto,
         tag: { pt: "Produto", en: "Product" },
         quote: {
-          pt: "A PagPegue saiu do zero para um ecossistema: painel, POS e validação na entrada.",
-          en: "PagPegue went from zero to an ecosystem: panel, POS, and door validation.",
+          pt: "A PagPegue saiu do zero para um ecossistema: painel, app de caixa e validação na entrada.",
+          en: "PagPegue went from zero to an ecosystem: panel, cashier app, and door validation.",
         },
       },
     ],
@@ -184,33 +184,33 @@ export const ui = {
     title: { pt: "Onde o código foi para produção.", en: "Where the code shipped." },
     items: [
       {
-        period: { pt: "Jan 2023 — hoje", en: "Jan 2023 — now" },
+        period: { pt: "2023 — Atual", en: "2023 — Present" },
         role: {
-          pt: "Criador · Full stack e mobile",
-          en: "Creator · Full stack and mobile",
+          pt: "Desenvolvedor Full Stack & Mobile",
+          en: "Full Stack & Mobile Developer",
         },
         place: "Vértice Softwares",
         text: {
-          pt: "Sites, sistemas e apps sob medida. CRM no WhatsApp, Condo360 nas três plataformas e a Academy, que sigo vendendo para professores.",
-          en: "Custom sites, systems, and apps. WhatsApp CRM, Condo360 on all three platforms, and the Academy, which I keep selling to teachers.",
+          pt: "Na Vértice Softwares eu desenho e entrego produtos web e mobile, do briefing ao que está no ar: CRM no WhatsApp, Condo360 nas lojas e a Academy, plataforma de ensino já usada por professores.",
+          en: "At Vértice Softwares I design and deliver web and mobile products, from briefing to production: WhatsApp CRM, Condo360 in stores, and Academy, an educational platform already used by teachers.",
         },
       },
       {
         period: { pt: "Produto no ar", en: "Live product" },
-        role: { pt: "Fundador", en: "Founder" },
+        role: { pt: "Desenvolvedor Full Stack & Mobile", en: "Full Stack & Mobile Developer" },
         place: "PagPegue",
         text: {
-          pt: "PDV em Stone, PagBank e outras adquirentes, com validação de caixa no app.",
-          en: "POS on Stone, PagBank, and other acquirers, with till validation in the app.",
+          pt: "Sistema de pagamento para estabelecimentos (dashboard web, app de caixa, integração Stone e PagBank), usado por 2 estabelecimentos que já geraram mais de R$ 15.000 em vendas.",
+          en: "Payment system for establishments (web dashboard, cashier app, Stone and PagBank integration), used by 2 establishments that have already generated over R$ 15,000 in sales.",
         },
       },
       {
-        period: { pt: "Set 2024 — hoje", en: "Sep 2024 — now" },
-        role: { pt: "Analista de programação", en: "Programming analyst" },
-        place: "Grupo Itajobi",
+        period: { pt: "Set 2024", en: "Sep 2024" },
+        role: { pt: "Desenvolvedor de Sistemas", en: "Software Developer" },
+        place: { pt: "Projeto de Telemetria", en: "Telemetry Project" },
         text: {
-          pt: "Sistemas web e mobile. O que conto aqui é performance de API e de app.",
-          en: "Web and mobile systems. What I share here is API and app performance.",
+          pt: "Desenvolvimento e manutenção de aplicações web e mobile com foco em performance. Sistemas de telemetria em produção: API de histórico saiu de 3+ min para 214 ms, app 40% mais rápido.",
+          en: "Development and maintenance of web and mobile applications focused on performance. Telemetry systems in production: history API went from 3+ min to 214 ms, app 40% faster.",
         },
       },
     ],
@@ -225,8 +225,8 @@ export const ui = {
   contact: {
     eyebrow: { pt: "Contato", en: "Contact" },
     title: {
-      pt: "Se o problema é de produção, escreva.",
-      en: "If the problem is in production, write.",
+      pt: "Aberto a novas oportunidades",
+      en: "Open to new opportunities",
     },
     lede: {
       pt: "Aberto a full stack, front-end, back-end, mobile e engenharia de IA. Remoto ou híbrido no Rio de Janeiro.",
