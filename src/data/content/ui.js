@@ -150,7 +150,7 @@ export const ui = {
         },
       },
       {
-        href: "https://pt.linkedin.com/posts/luiz-henrique44_buildinginpublic-pagpegue-activity-7507508755861983233-6QrG",
+        href: "https://pt.linkedin.com/posts/luiz-henrique44_buildinginpublic-pagpegue-pdv-activity-7507508755861983233-6QrG",
         image: pagpeguePoster,
         video: pagpegueVideo,
         tag: "PagPegue",

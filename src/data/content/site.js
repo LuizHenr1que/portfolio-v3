@@ -1,5 +1,5 @@
 export const links = {
-  linkedin: "https://www.linkedin.com/in/luizhenr1que/",
+  linkedin: "https://www.linkedin.com/in/luiz-henrique44/",
   github: "https://github.com/LuizHenr1que",
   email: "luizhenriquejob4@gmail.com",
   pagpegue: "https://pagpegue.com.br/",
