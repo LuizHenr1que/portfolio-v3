@@ -162,10 +162,10 @@ export const ui = {
       {
         href: "https://pt.linkedin.com/posts/luiz-henrique44_pagpegue-techlead-saas-activity-7513357461097975808-i5H4",
         image: agro,
-        tag: { pt: "Produção", en: "Production" },
+        tag: { pt: "Usina Itajobi", en: "Usina Itajobi" },
         quote: {
-          pt: "Do código direto para estoque, setores e venda em tempo real em produção.",
-          en: "From the code straight into live stock, sections, and sales in production.",
+          pt: "Do zero ao rastreamento em produção: alertas, motor ocioso, velocidade e despacho automático.",
+          en: "From zero to tracking in production: alerts, idle engine, speed and automatic dispatch.",
         },
       },
       {
