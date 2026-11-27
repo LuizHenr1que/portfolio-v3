@@ -5,7 +5,7 @@ import { useI18n } from "../contexts/LanguageContext";
 import { resumeUrl } from "../data/content/site";
 
 export function Hero() {
-  const { copy } = useI18n();
+  const { copy, lang } = useI18n();
   const reduce = useReducedMotion();
   const { hero, metrics } = copy;
 
@@ -30,7 +30,7 @@ export function Hero() {
               {hero.primary}
             </a>
             <a
-              href={resumeUrl()}
+              href={resumeUrl(lang)}
               target="_blank"
               rel="noreferrer"
               className="rounded-full border border-line px-5 py-3 text-sm text-paper"

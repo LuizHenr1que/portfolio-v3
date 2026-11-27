@@ -13,16 +13,16 @@ export const cases = [
     featured: true,
     href: links.pagpegue,
     title: "PagPegue",
-    role: { pt: "Fundador · do zero", en: "Founder · from scratch" },
+    role: { pt: "Desenvolvedor Full Stack & Mobile · do zero", en: "Full Stack & Mobile Developer · from scratch" },
     summary: {
-      pt: "PDV e POS para loja, praça e evento. O caixa roda em várias maquininhas Stone, na PagBank e em outras adquirentes. O app Android valida o ticket na entrada.",
-      en: "POS for stores, food courts, and events. The till runs on multiple Stone machines, on PagBank, and on other acquirers. The Android app validates the ticket at the door.",
+      pt: "Sistema de pagamento para estabelecimentos com dashboard web, aplicativo de caixa e integração com Stone e PagBank. O app Android valida o ticket na entrada.",
+      en: "Payment system for establishments with web dashboard, cashier app, and Stone and PagBank integration. The Android app validates the ticket at the door.",
     },
     result: {
-      pt: "Preparado para 400+ vendas por hora. Mais de R$ 15 mil em vendas nos estabelecimentos.",
-      en: "Built for 400+ sales an hour. More than R$ 15k in sales for the venues.",
+      pt: "Preparado para 400+ vendas por hora. Usado por 2 estabelecimentos, mais de R$ 15.000 em vendas, elogiado pela velocidade.",
+      en: "Built for 400+ sales an hour. Used by 2 establishments, over R$ 15,000 in sales, praised for speed.",
     },
-    stack: ["NestJS", "React", "PostgreSQL", "Prisma", "Socket.IO", "Android"],
+    stack: ["NestJS", "React", "TypeScript", "PostgreSQL", "Prisma", "Socket.IO", "Redis", "Stone SDK", "Android"],
   },
   {
     id: "condo360",
@@ -31,7 +31,7 @@ export const cases = [
     ios: links.condoIos,
     android: links.condoAndroid,
     title: "Condo360",
-    role: { pt: "Android · iOS · Web", en: "Android · iOS · Web" },
+    role: { pt: "React Native · React · TypeScript", en: "React Native · React · TypeScript" },
     summary: {
       pt: "App completo de condomínio para morador, portaria e síndico. Avisos, encomendas, visitas, reservas, chamados e financeiro com Pix e cartão, no celular e na web.",
       en: "A complete condo app for residents, the front desk, and the manager. Notices, packages, visitors, bookings, tickets, and payments by Pix or card, on the phone and on the web.",
@@ -40,7 +40,7 @@ export const cases = [
       pt: "O mesmo produto nas três plataformas: App Store, Play Store e o painel web.",
       en: "The same product on all three platforms: App Store, Play Store, and the web panel.",
     },
-    stack: ["Android", "iOS", "Web"],
+    stack: ["React Native", "Expo", "TypeScript", "React", "Node.js"],
   },
   {
     id: "cohle",
@@ -79,28 +79,28 @@ export const cases = [
     href: links.academy,
     demo: links.academyDemo,
     title: "Vértice Academy",
-    role: { pt: "Venda contínua para professores", en: "Ongoing sales to teachers" },
+    role: { pt: "Plataforma de ensino web", en: "Web educational platform" },
     summary: {
-      pt: "Não é uma entrega fechada. Eu sigo vendendo a plataforma para outros professores, e o lucro fica com a marca deles. O aluno responde questão, faz simulado, sobe no ranking e paga por Pix ou cartão.",
-      en: "It is not a one-off delivery. I keep selling the platform to other teachers, and the profit stays with their brand. The student answers questions, takes a mock exam, climbs the ranking, and pays by Pix or card.",
+      pt: "Plataforma de ensino já usada por professores. O aluno responde questão, faz simulado, sobe no ranking e paga por Pix ou cartão.",
+      en: "Educational platform already used by teachers. The student answers questions, takes a mock exam, climbs the ranking, and pays by Pix or card.",
     },
     result: {
-      pt: "Landing no ar e demo com quiz, cronômetro e ranking da turma, prontos para a próxima venda.",
-      en: "Landing page live, and a demo with the quiz, timer, and class ranking, ready for the next sale.",
+      pt: "Landing no ar e demo com quiz, cronômetro e ranking da turma, prontos e usados por professores.",
+      en: "Landing page live and demo with quiz, timer, and class ranking, ready and used by teachers.",
     },
     images: [
       { src: academyLanding, label: { pt: "Landing", en: "Landing" } },
       { src: academyDemo, label: { pt: "Demo", en: "Demo" } },
     ],
-    stack: ["React", "Quiz", "Ranking", "Pix"],
+    stack: ["React", "TypeScript", "Node.js", "Quiz", "Ranking", "Pix"],
   },
   {
-    id: "itajobi",
-    title: "Grupo Itajobi",
-    role: { pt: "Analista de programação", en: "Programming analyst" },
+    id: "telemetria",
+    title: { pt: "Sistema de Telemetria", en: "Telemetry System" },
+    role: { pt: "Desenvolvedor de Sistemas", en: "Software Developer" },
     summary: {
-      pt: "Sistemas web e mobile do grupo. O recorte público fica na engenharia: API, app e o que foi para produção.",
-      en: "Web and mobile systems for the group. The public cut stays on the engineering: API, app, and what shipped.",
+      pt: "Sistema de telemetria em produção. Desenvolvimento e manutenção de aplicações web e mobile com foco em performance de API e app.",
+      en: "Telemetry system in production. Development and maintenance of web and mobile applications focused on API and app performance.",
     },
     result: {
       pt: "A API de histórico saiu de mais de 3 min para cerca de 214 ms. O app ficou cerca de 40% mais rápido.",
@@ -116,6 +116,21 @@ export const cases = [
         label: { pt: "performance do app", en: "app performance" },
       },
     ],
-    stack: ["React Native", "Laravel", "React", "Realm"],
+    stack: ["React Native", "Laravel", "React", "Realm", "Redis", "MySQL"],
+  },
+  {
+    id: "larzin",
+    title: "LarZin",
+    role: { pt: "App de organização doméstica", en: "Home organization app" },
+    ios: "https://apps.apple.com/app/larzin",
+    summary: {
+      pt: "App de organização doméstica publicado na App Store. Gestão de tarefas, listas e organização do lar.",
+      en: "Home organization app published on the App Store. Task management, lists, and home organization.",
+    },
+    result: {
+      pt: "Publicado na App Store e disponível para download.",
+      en: "Published on the App Store and available for download.",
+    },
+    stack: ["React Native", "Expo", "TypeScript"],
   },
 ];

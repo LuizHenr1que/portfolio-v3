@@ -4,14 +4,14 @@ import { useI18n } from "../contexts/LanguageContext";
 import { links, resumeUrl } from "../data/content/site";
 
 export function Contact() {
-  const { copy } = useI18n();
+  const { copy, lang } = useI18n();
   const { contact } = copy;
 
   const actions = [
     { label: contact.linkedin, href: links.linkedin },
     { label: contact.github, href: links.github },
     { label: contact.email, href: `mailto:${links.email}` },
-    { label: contact.resume, href: resumeUrl() },
+    { label: contact.resume, href: resumeUrl(lang) },
   ];
 
   return (
