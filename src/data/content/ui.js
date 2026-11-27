@@ -12,8 +12,8 @@ export const ui = {
       en: "Luiz Henrique · Full stack",
     },
     description: {
-      pt: "Fundador da PagPegue e criador da Vértice Softwares. PDV, Condo360, CRM e Academy.",
-      en: "Founder of PagPegue and creator of Vértice Softwares. POS, Condo360, CRM, and Academy.",
+      pt: "Fundador da PagPegue e criador da Vértice Softwares. PDV, Condo360, CRM, Academy e analista de programação no Grupo Itajobi.",
+      en: "Founder of PagPegue and creator of Vértice Softwares. POS, Condo360, CRM, Academy, and programming analyst at Grupo Itajobi.",
     },
   },
   nav: [
@@ -30,8 +30,8 @@ export const ui = {
     title: { pt: "Eu entrego o sistema", en: "I ship the system" },
     titleEm: { pt: "e fico no pico.", en: "and stay for the rush." },
     lede: {
-      pt: "Fundador da PagPegue e criador da Vértice Softwares. No ar: PDV em Stone e PagBank, Condo360, CRM e Academy.",
-      en: "Founder of PagPegue and creator of Vértice Softwares. Live: POS on Stone and PagBank, Condo360, CRM, and Academy.",
+      pt: "Fundador da PagPegue e criador da Vértice Softwares. No ar: PDV em Stone e PagBank, Condo360, CRM e Academy. Analista de programação no Grupo Itajobi.",
+      en: "Founder of PagPegue and creator of Vértice Softwares. Live: POS on Stone and PagBank, Condo360, CRM, and Academy. Programming analyst at Grupo Itajobi.",
     },
     primary: { pt: "Ver o trabalho", en: "See the work" },
     secondary: { pt: "Currículo", en: "Resume" },
@@ -42,8 +42,8 @@ export const ui = {
       value: 40,
       suffix: "%",
       label: {
-        pt: "mais performance na telemetria",
-        en: "faster telemetry app",
+        pt: "mais performance no app",
+        en: "faster app",
       },
     },
     {
@@ -68,18 +68,18 @@ export const ui = {
     },
     items: [
       {
-        kicker: { pt: "API de timeline", en: "Timeline API" },
+        kicker: { pt: "API de histórico", en: "History API" },
         beforeLabel: { pt: "Antes", en: "Before" },
         before: { pt: "mais de 3 min", en: "over 3 min" },
         afterLabel: { pt: "Depois", en: "After" },
         after: "214 ms",
         text: {
-          pt: "O endpoint lia cerca de 14 horas de histórico de rotas com consultas N+1 entre Redis e MySQL. Reescrevi a leitura, cortei ida e volta redundante e passei a usar o cache de propósito.",
-          en: "The endpoint read about 14 hours of route history with N+1 queries between Redis and MySQL. I rebuilt the read path, cut redundant round-trips, and started using the cache on purpose.",
+          pt: "O endpoint de um histórico longo fazia consultas N+1 entre Redis e MySQL. Reescrevi a leitura, cortei ida e volta redundante e passei a usar o cache de propósito.",
+          en: "A long-history endpoint ran N+1 queries between Redis and MySQL. I rebuilt the read path, cut redundant round-trips, and started using the cache on purpose.",
         },
       },
       {
-        kicker: { pt: "App de telemetria", en: "Telemetry app" },
+        kicker: { pt: "App mobile", en: "Mobile app" },
         beforeLabel: { pt: "Antes", en: "Before" },
         before: { pt: "travava no volume", en: "stalled under load" },
         afterLabel: { pt: "Depois", en: "After" },
@@ -181,7 +181,7 @@ export const ui = {
   },
   experience: {
     eyebrow: { pt: "Trajetória", en: "Path" },
-    title: { pt: "Onde o código encontra a operação.", en: "Where the code meets the operation." },
+    title: { pt: "Onde o código foi para produção.", en: "Where the code shipped." },
     items: [
       {
         period: { pt: "Jan 2023 — hoje", en: "Jan 2023 — now" },
@@ -202,6 +202,15 @@ export const ui = {
         text: {
           pt: "PDV em Stone, PagBank e outras adquirentes, com validação de caixa no app.",
           en: "POS on Stone, PagBank, and other acquirers, with till validation in the app.",
+        },
+      },
+      {
+        period: { pt: "Set 2024 — hoje", en: "Sep 2024 — now" },
+        role: { pt: "Analista de programação", en: "Programming analyst" },
+        place: "Grupo Itajobi",
+        text: {
+          pt: "Sistemas web e mobile. O que conto aqui é performance de API e de app.",
+          en: "Web and mobile systems. What I share here is API and app performance.",
         },
       },
     ],

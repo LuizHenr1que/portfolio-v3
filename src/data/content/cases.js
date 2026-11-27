@@ -94,4 +94,28 @@ export const cases = [
     ],
     stack: ["React", "Quiz", "Ranking", "Pix"],
   },
+  {
+    id: "itajobi",
+    title: "Grupo Itajobi",
+    role: { pt: "Analista de programação", en: "Programming analyst" },
+    summary: {
+      pt: "Sistemas web e mobile do grupo. O recorte público fica na engenharia: API, app e o que foi para produção.",
+      en: "Web and mobile systems for the group. The public cut stays on the engineering: API, app, and what shipped.",
+    },
+    result: {
+      pt: "A API de histórico saiu de mais de 3 min para cerca de 214 ms. O app ficou cerca de 40% mais rápido.",
+      en: "The history API went from over 3 min to about 214 ms. The app got about 40% faster.",
+    },
+    stats: [
+      {
+        value: "214 ms",
+        label: { pt: "API de histórico", en: "history API" },
+      },
+      {
+        value: "+40%",
+        label: { pt: "performance do app", en: "app performance" },
+      },
+    ],
+    stack: ["React Native", "Laravel", "React", "Realm"],
+  },
 ];
