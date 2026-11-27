@@ -1,34 +1,24 @@
-import withMT from "@material-tailwind/react/utils/withMT";
-
 /** @type {import('tailwindcss').Config} */
-export default withMT({
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: 'class', // Habilita modo escuro baseado em classe
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        text: "var(--text)",
-        textDim: "var(--textDim)",
-        background: "var(--background)",
-        primary: "var(--primary)",
-        primaryBg: "var(--primaryBg)",
-        primaryHi: "var(--primaryHi)",
-        primaryFg: "var(--primaryFg)",
-        secondary: "var(--secondary)",
-        secondaryFg: "var(--secondaryFg)",
-        secondaryBg: "var(--secondaryBg)",
-        secondaryHi: "var(--secondaryHi)",
-        accent: "var(--accent)",
-        accentBg: "var(--accentBg)",
-        accentHi: "var(--accentHi)",
+        ink: "#0c0d0b",
+        panel: "#151613",
+        paper: "#f3efe4",
+        mute: "#a39c8f",
+        acid: "#dff25a",
+        line: "rgba(243, 239, 228, 0.12)",
       },
       fontFamily: {
-        sans: ["Graphik", "sans-serif"],
+        sans: ["Manrope", "system-ui", "sans-serif"],
+        serif: ['"Instrument Serif"', "Georgia", "serif"],
+      },
+      maxWidth: {
+        page: "72rem",
       },
     },
   },
-  // plugins: [
-  //   require('@tailwindcss/forms'),
-  //   require('@tailwindcss/typography'),
-  // ],
-});
+  plugins: [],
+};
